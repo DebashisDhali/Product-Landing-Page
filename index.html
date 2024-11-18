@@ -1,103 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technical Documentation</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav id="navbar">
-      <header>Technical Documentation</header>
-      <a href="#HTML_Basics" class="nav-link">HTML Basics</a>
-      <a href="#CSS_Styling" class="nav-link">CSS Styling</a>
-      <a href="#JavaScript_Basics" class="nav-link">JavaScript Basics</a>
-      <a href="#Responsive_Design" class="nav-link">Responsive Design</a>
-      <a href="#Web_Development" class="nav-link">Web Development</a>
-    </nav>
-    <main id="main-doc">
-      <section class="main-section" id="HTML_Basics">
-        <header>HTML Basics</header>
-        <p>HTML stands for HyperText Markup Language.</p>
-        <p>It is used to create the structure of web pages.</p>
-        <p>HTML elements are represented by tags.</p>
-        <code>&lt;!DOCTYPE html&gt;</code>
-        <p>Common tags include:</p>
-        <ul>
-          <li>&lt;html&gt;</li>
-          <li>&lt;head&gt;</li>
-          <li>&lt;body&gt;</li>
-        </ul>
-        <p>HTML is essential for web development.</p>
-      </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#" class="logo">ProductLogo</a>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="hero">
+            <h1>Welcome to Our Amazing Product</h1>
+            <p>Discover the power of simplicity with our innovative solution</p>
+            <a href="#pricing" class="cta-btn">Get Started</a>
+        </section>
+    </header>
 
-      <section class="main-section" id="CSS_Styling">
-        <header>CSS Styling</header>
-        <p>CSS stands for Cascading Style Sheets.</p>
-        <p>It is used to style HTML elements.</p>
-        <p>CSS can control layout, colors, fonts, and more.</p>
-        <code>body { background-color: lightblue; }</code>
-        <p>Common properties include:</p>
-        <ul>
-          <li>color</li>
-          <li>font-size</li>
-          <li>margin</li>
-          <li>padding</li>
-          <li>border</li>
-        </ul>
-        <p>CSS improves the appearance of web pages.</p>
-      </section>
+    <main>
+        <section id="features">
+            <h2>Features</h2>
+            <div class="feature-item">
+                <h3>Feature 1</h3>
+                <p>Our product provides an exceptional experience with this amazing feature.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 2</h3>
+                <p>Enjoy seamless integration and powerful functionality.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 3</h3>
+                <p>Experience the next level of performance and reliability.</p>
+            </div>
+        </section>
 
-      <section class="main-section" id="JavaScript_Basics">
-        <header>JavaScript Basics</header>
-        <p>JavaScript is a programming language for the web.</p>
-        <p>It enables interactive web pages.</p>
-        <p>JavaScript can manipulate HTML and CSS.</p>
-        <code>console.log('Hello, World!');</code>
-        <p>Common features include:</p>
-        <ul>
-          <li>Variables</li>
-          <li>Functions</li>
-          <li>Events</li>
-          <li>Objects</li>
-          <li>Arrays</li>
-        </ul>
-        <p>JavaScript is essential for modern web development.</p>
-      </section>
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <div class="pricing-plan">
+                <h3>Basic Plan</h3>
+                <p>$19/month</p>
+                <a href="#" class="cta-btn">Choose Plan</a>
+            </div>
+            <div class="pricing-plan">
+                <h3>Premium Plan</h3>
+                <p>$39/month</p>
+                <a href="#" class="cta-btn">Choose Plan</a>
+            </div>
+        </section>
 
-      <section class="main-section" id="Responsive_Design">
-        <header>Responsive Design</header>
-        <p>Responsive design ensures web pages look good on all devices.</p>
-        <p>It uses fluid grids, flexible images, and media queries.</p>
-        <p>Media queries adapt styles based on device characteristics.</p>
-        <code>@media screen and (max-width: 600px) { }</code>
-        <p>Key principles include:</p>
-        <ul>
-          <li>Mobile-first design</li>
-          <li>Flexible layouts</li>
-          <li>Adaptive images</li>
-          <li>Viewport meta tag</li>
-          <li>CSS Grid and Flexbox</li>
-        </ul>
-        <p>Responsive design improves user experience.</p>
-      </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
 
-      <section class="main-section" id="Web_Development">
-        <header>Web Development</header>
-        <p>Web development is the process of building websites.</p>
-        <p>It involves both front-end and back-end development.</p>
-        <p>Common technologies include HTML, CSS, and JavaScript.</p>
-        <code>const express = require('express');</code>
-        <p>Web development areas include:</p>
-        <ul>
-          <li>Frontend Development</li>
-          <li>Backend Development</li>
-          <li>Full Stack Development</li>
-          <li>DevOps</li>
-          <li>Database Management</li>
-        </ul>
-        <p>Web development is a dynamic and evolving field.</p>
-      </section>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
-  </body>
+
+    <footer>
+        <p>&copy; 2024 ProductCompany. All Rights Reserved.</p>
+    </footer>
+</body>
 </html>
